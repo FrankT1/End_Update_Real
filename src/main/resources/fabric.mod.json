@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "hackcraft_jan_2026",
+  "version": "${version}",
+  "name": "end update (real)",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/hackcraft_jan_2026/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.example.hackcraft_jan_2026.client.Hackcraft_jan_2026DataGenerator"
+    ],
+    "client": [
+      "com.example.hackcraft_jan_2026.client.Hackcraft_jan_2026Client"
+    ],
+    "main": [
+      "com.example.hackcraft_jan_2026.Hackcraft_jan_2026"
+    ]
+  },
+  "mixins": [
+    "hackcraft_jan_2026.mixins.json",
+    {
+      "config": "hackcraft_jan_2026.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
