@@ -11,13 +11,13 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "com.example.hackcraft_jan_2026.client.Hackcraft_jan_2026DataGenerator"
+      "com.frookus.endupdatereal.client.EndUpdateRealDataGenerator"
     ],
     "client": [
-      "com.example.hackcraft_jan_2026.client.Hackcraft_jan_2026Client"
+      "com.frookus.endupdatereal.client.EndUpdateRealClient"
     ],
     "main": [
-      "com.example.hackcraft_jan_2026.Hackcraft_jan_2026"
+      "com.frookus.endupdatereal.EndUpdateReal"
     ]
   },
   "mixins": [

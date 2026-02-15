@@ -1,6 +1,6 @@
-package com.example.hackcraft_jan_2026.item;
+package com.frookus.endupdatereal.item;
 
-import com.example.hackcraft_jan_2026.Hackcraft_jan_2026;
+import com.frookus.endupdatereal.EndUpdateReal;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -23,7 +23,7 @@ public class ModItems {
 
     public static <GenericItem extends Item> GenericItem registerItem(String name, Function<Item.Settings, GenericItem> itemFactory, Item.Settings settings) {
 
-        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Hackcraft_jan_2026.MOD_ID, name));
+        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(EndUpdateReal.MOD_ID, name));
 
         GenericItem item = itemFactory.apply(settings.registryKey(itemKey));
 
