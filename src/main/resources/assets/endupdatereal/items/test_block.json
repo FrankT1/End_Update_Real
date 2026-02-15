@@ -1,3 +1,6 @@
 {
-  "parent": "endupdatereal:block/test_block"
+  "model": {
+    "type": "minecraft:model",
+    "model": "endupdatereal:block/test_block"
+  }
 }

@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "block/cube_all",
   "textures": {
-    "all":"endupdatereal:block/test_block"
+    "all": "endupdatereal:block/test_block"
   }
 }
