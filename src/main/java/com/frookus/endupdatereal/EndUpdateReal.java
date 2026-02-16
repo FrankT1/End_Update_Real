@@ -1,6 +1,7 @@
 package com.frookus.endupdatereal;
 
 import com.frookus.endupdatereal.block.ModBlocks;
+import com.frookus.endupdatereal.item.ModItemGroups;
 import com.frookus.endupdatereal.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
@@ -14,5 +15,6 @@ public class EndUpdateReal implements ModInitializer {
     public void onInitialize() {
         ModItems.initializeModItems();
         ModBlocks.initializeModBlocks();
+        ModItemGroups.initializeItemGroups();
     }
 }
