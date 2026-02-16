@@ -38,7 +38,6 @@ public class ModItems {
 
     public static void initializeModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(TEST_ITEM);
         });
 
     }

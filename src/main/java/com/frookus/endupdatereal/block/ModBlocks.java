@@ -37,11 +37,5 @@ public class ModBlocks {
     public static final Block TEST_BLOCK_2 = registerBlock("test_block_2", Block::new, AbstractBlock.Settings.create(), true);
 
     public static void initializeModBlocks() {
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(TEST_BLOCK);
-            entries.add(TEST_BLOCK_2);
-        });
-
-
     }
 }

@@ -4,7 +4,7 @@
   "version": "${version}",
   "name": "end update (real)",
   "description": "",
-  "authors": [],
+  "authors": ["frookus"],
   "contact": {},
   "license": "MIT",
   "icon": "assets/hackcraft_jan_2026/icon.png",

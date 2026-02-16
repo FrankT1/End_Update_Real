@@ -4,5 +4,10 @@
 
 
 
-  "item.endupdatereal.test_block": "Test Block"
+  "item.endupdatereal.test_block": "Test Block",
+
+
+
+
+  "itemgroup.endupdatereal.end_update_real_items": "End Update (Real) Items"
 }
