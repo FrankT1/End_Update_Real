@@ -1,6 +1,7 @@
 package com.frookus.endupdatereal.item;
 
 import com.frookus.endupdatereal.EndUpdateReal;
+import com.frookus.endupdatereal.item.custom.EnderDustItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -33,7 +34,7 @@ public class ModItems {
     }
 
     public static final Item TEST_ITEM = registerItem("test_item", Item::new, new Item.Settings());
-
+    public static final Item ENDER_DUST = registerItem("ender_dust", EnderDustItem::new, new Item.Settings());
 
 
     public static void initializeModItems() {

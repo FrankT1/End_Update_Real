@@ -22,6 +22,7 @@ public class ModItemGroups {
                         entries.add(ModItems.TEST_ITEM);
                         entries.add(ModBlocks.TEST_BLOCK);
                         entries.add(ModBlocks.TEST_BLOCK_2);
+                        entries.add(ModItems.ENDER_DUST);
                     }))
 
                     .build());
