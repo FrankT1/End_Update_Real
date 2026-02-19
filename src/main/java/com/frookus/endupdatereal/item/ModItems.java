@@ -35,7 +35,9 @@ public class ModItems {
 
     public static final Item TEST_ITEM = registerItem("test_item", Item::new, new Item.Settings());
     public static final Item ENDER_DUST = registerItem("ender_dust", EnderDustItem::new, new Item.Settings());
-
+//    public static final Item MORTAR = registerItem("mortar", Item::new, new Item.Settings()
+//            .maxCount(1)
+//            .maxDamage(256));
 
     public static void initializeModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {

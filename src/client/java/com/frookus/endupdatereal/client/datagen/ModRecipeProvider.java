@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
@@ -33,10 +34,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .offerTo(exporter);
 
                 createShapeless(RecipeCategory.MISC, ModItems.ENDER_DUST)
-                        .input(Items.ENDER_PEARL)
+                        .input(Items.ENDER_PEARL, 8)
                         .input(Items.FLINT)
                         .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
                         .offerTo(exporter);
+
+//                createShaped(RecipeCategory.TOOLS, ModItems.MORTAR)
+//                        .pattern("***")
+//                        .pattern("SFS")
+//                        .pattern("*S*")
+//                        .input('F', Items.FLINT)
+//                        .input('S', Items.STONE)
+//                        .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
+//                        .offerTo(exporter);
 
             }
         };
