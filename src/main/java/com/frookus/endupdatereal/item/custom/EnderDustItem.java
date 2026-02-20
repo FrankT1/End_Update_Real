@@ -23,7 +23,7 @@ public class EnderDustItem extends Item {
 
         blockPos = blockPos.add(0.5, 1.0, 0.5);
 
-        if (context.getWorld().getBlockState(BlockPos.ofFloored(blockPos)).isSolid() == false){
+        if (!context.getWorld().getBlockState(BlockPos.ofFloored(blockPos)).isSolid()){
             PlayerEntity player = context.getPlayer();
             player.setPosition(blockPos);
 

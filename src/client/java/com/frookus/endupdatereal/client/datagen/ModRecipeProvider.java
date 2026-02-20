@@ -28,21 +28,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void generate() {
 
-                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModItems.TEST_ITEM, 9)
-                        .input(ModBlocks.TEST_BLOCK)
-                        .criterion(hasItem(ModBlocks.TEST_BLOCK), conditionsFromItem(ModBlocks.TEST_BLOCK))
-                        .offerTo(exporter);
-
                 createShapeless(RecipeCategory.MISC, ModItems.ENDER_DUST)
-                        .input(Items.ENDER_PEARL, 8)
-                        .input(Items.FLINT)
+                        .input(Items.ENDER_PEARL)
+                        .input(ModItems.MORTAR)
                         .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
                         .offerTo(exporter);
 
 //                createShaped(RecipeCategory.TOOLS, ModItems.MORTAR)
-//                        .pattern("***")
+//                        .pattern("   ")
 //                        .pattern("SFS")
-//                        .pattern("*S*")
+//                        .pattern(" S ")
 //                        .input('F', Items.FLINT)
 //                        .input('S', Items.STONE)
 //                        .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
