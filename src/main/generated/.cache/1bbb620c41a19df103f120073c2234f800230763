@@ -1,0 +1,13 @@
+// 1.21.11	-999999999-01-01T00:00:00	end update (real)/Model Definitions
+1ecf141cd94e39cf497ce16cd5c0c7580405bd0b assets/endupdatereal/blockstates/test_block.json
+3bfdd94907d5e0d189108403221442f65f2e651d assets/endupdatereal/blockstates/test_block_2.json
+1d2ebf27c40ac274d0dfe0c4e8c0184bea43bba7 assets/endupdatereal/items/ender_dust.json
+b610d13cd764eb6e79323579a41dcfb3dfd27112 assets/endupdatereal/items/mortar.json
+c943f1de5e049db7764b57b6d0341317e7050994 assets/endupdatereal/items/test_block.json
+25a53d3cb58e4665ee6b652e03a279cc02b3191c assets/endupdatereal/items/test_block_2.json
+716c43b3e40206fa550662b3c0328c7bc92a3534 assets/endupdatereal/items/test_item.json
+0b966e54685bc51464d4de327ed8801fd3390244 assets/endupdatereal/models/block/test_block.json
+6df6b872802c964281454ac74d3e12702dedc69d assets/endupdatereal/models/block/test_block_2.json
+8da03dc858dab466df219fcd178c6e98b8e3c43d assets/endupdatereal/models/item/ender_dust.json
+3b643dd0f563cfb6c34bb7efe4e35d14a1a69bd9 assets/endupdatereal/models/item/mortar.json
+e7af95a79ca351b9ee9fa75657a00072e64489f1 assets/endupdatereal/models/item/test_item.json

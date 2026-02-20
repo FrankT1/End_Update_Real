@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:ender_pearl",
+    "endupdatereal:mortar"
+  ],
+  "result": {
+    "count": 1,
+    "id": "endupdatereal:ender_dust"
+  }
+}

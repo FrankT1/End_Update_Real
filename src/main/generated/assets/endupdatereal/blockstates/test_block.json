@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "endupdatereal:block/test_block"
+    }
+  }
+}
