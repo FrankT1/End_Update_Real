@@ -1,3 +1,5 @@
 // 1.21.11	-999999999-01-01T00:00:00	end update (real)/EndUpdateRealRecipeProvider
 ff64be3b28776f42b4ae00a1f2e42aa681f8212f data/endupdatereal/advancement/recipes/misc/ender_dust.json
+2b29b1e32040e98114f215a784442c0b7e4c4959 data/endupdatereal/advancement/recipes/tools/mortar.json
 94d02ba5b45e20cdd5dc6a3993a623e8fd59c3df data/endupdatereal/recipe/ender_dust.json
+1acdb7cd5b655c9c42612be0038a3c4353de21a9 data/endupdatereal/recipe/mortar.json

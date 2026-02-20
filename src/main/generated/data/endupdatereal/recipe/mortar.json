@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "F": "minecraft:flint",
+    "S": "minecraft:stone"
+  },
+  "pattern": [
+    " F ",
+    "SFS",
+    " S "
+  ],
+  "result": {
+    "count": 1,
+    "id": "endupdatereal:mortar"
+  }
+}
