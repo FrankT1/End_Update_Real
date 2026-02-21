@@ -1,9 +1,10 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.hackcraft_jan_2026.mixin",
+  "package": "com.frookus.endupdatereal.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "RepairItemRecipeMixin"
   ],
   "injectors": {
     "defaultRequire": 1

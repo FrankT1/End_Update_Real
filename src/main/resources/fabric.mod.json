@@ -21,7 +21,7 @@
     ]
   },
   "mixins": [
-    "hackcraft_jan_2026.mixins.json",
+    "endupdatereal.mixins.json",
     {
       "config": "hackcraft_jan_2026.client.mixins.json",
       "environment": "client"
