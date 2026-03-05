@@ -3,7 +3,7 @@
   "category": "misc",
   "ingredients": [
     "minecraft:ender_pearl",
-    "endupdatereal:mortar"
+    "#endupdatereal:mortar_items"
   ],
   "result": {
     "count": 1,

@@ -1,6 +1,7 @@
 package com.frookus.endupdatereal.client.datagen;
 
 import com.frookus.endupdatereal.item.ModItems;
+import com.frookus.endupdatereal.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipe.RecipeExporter;
@@ -27,7 +28,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 createShapeless(RecipeCategory.MISC, ModItems.ENDER_DUST)
                         .input(Items.ENDER_PEARL)
-                        .input(ModItems.MORTAR)
+                        .input(ModTags.Items.MORTAR_ITEMS)
                         .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
                         .offerTo(exporter);
 

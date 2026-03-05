@@ -43,7 +43,8 @@ public class ModItems {
             .maxCount(1)
             .maxDamage(256));
     public static final Item OBSIDIAN_MORTAR = registerItem("obsidian_mortar", MortarItem::new, new Item.Settings()
-            .maxCount(1));
+            .maxCount(1)
+            .maxDamage(65536));
     public static final Item AMMO_BAG = registerItem("ammo_bag", AmmoBagItem::new, new Item.Settings()
             .maxCount(1));
 
