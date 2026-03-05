@@ -1,6 +1,7 @@
 package com.frookus.endupdatereal.item;
 
 import com.frookus.endupdatereal.EndUpdateReal;
+import com.frookus.endupdatereal.item.custom.AmmoBagItem;
 import com.frookus.endupdatereal.item.custom.EnderDustItem;
 import com.frookus.endupdatereal.item.custom.MortarItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -41,6 +42,11 @@ public class ModItems {
     public static final Item MORTAR = registerItem("mortar", MortarItem::new, new Item.Settings()
             .maxCount(1)
             .maxDamage(256));
+    public static final Item OBSIDIAN_MORTAR = registerItem("obsidian_mortar", MortarItem::new, new Item.Settings()
+            .maxCount(1));
+    public static final Item AMMO_BAG = registerItem("ammo_bag", AmmoBagItem::new, new Item.Settings()
+            .maxCount(1));
+
 
     public static void initializeModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {

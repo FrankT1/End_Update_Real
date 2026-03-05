@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": "minecraft:obsidian",
+    "X": "minecraft:diamond"
+  },
+  "pattern": [
+    " X ",
+    "OXO",
+    " O "
+  ],
+  "result": {
+    "count": 1,
+    "id": "endupdatereal:obsidian_mortar"
+  }
+}

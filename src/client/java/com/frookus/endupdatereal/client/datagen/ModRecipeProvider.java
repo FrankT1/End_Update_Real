@@ -8,6 +8,7 @@ import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -18,7 +19,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    protected RecipeGenerator getRecipeGenerator(RegistryWrapper.WrapperLookup registryLookup, RecipeExporter exporter) {
+    protected @NonNull RecipeGenerator getRecipeGenerator(RegistryWrapper.@NonNull WrapperLookup registryLookup, @NonNull RecipeExporter exporter) {
         return new RecipeGenerator(registryLookup, exporter) {
 
             @Override
@@ -46,6 +47,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(Items.FLINT), conditionsFromItem(Items.FLINT))
                         .offerTo(exporter);
 
+                createShaped(RecipeCategory.TOOLS, ModItems.OBSIDIAN_MORTAR)
+                        .pattern(" X ")
+                        .pattern("OXO")
+                        .pattern(" O ")
+                        .input('X', Items.DIAMOND)
+                        .input('O', Items.OBSIDIAN)
+                        .criterion(hasItem(Items.OBSIDIAN), conditionsFromItem(Items.OBSIDIAN))
+                        .offerTo(exporter);
             }
         };
     }
