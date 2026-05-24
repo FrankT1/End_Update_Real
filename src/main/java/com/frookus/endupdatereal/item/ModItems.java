@@ -1,14 +1,11 @@
 package com.frookus.endupdatereal.item;
 
 import com.frookus.endupdatereal.EndUpdateReal;
-import com.frookus.endupdatereal.item.custom.AmmoBagItem;
 import com.frookus.endupdatereal.item.custom.EnderDustItem;
 import com.frookus.endupdatereal.item.custom.MortarItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -38,15 +35,13 @@ public class ModItems {
     }
 
     public static final Item TEST_ITEM = registerItem("test_item", Item::new, new Item.Settings());
-    public static final Item ENDER_DUST = registerItem("ender_dust", EnderDustItem::new, new Item.Settings());
+    public static final Item ENDER_DUST = registerItem("ender_dust", EnderDustItem::new, new Item.Settings().useCooldown(1.0f));
     public static final Item MORTAR = registerItem("mortar", MortarItem::new, new Item.Settings()
             .maxCount(1)
             .maxDamage(256));
     public static final Item OBSIDIAN_MORTAR = registerItem("obsidian_mortar", MortarItem::new, new Item.Settings()
             .maxCount(1)
             .maxDamage(65536));
-    public static final Item AMMO_BAG = registerItem("ammo_bag", AmmoBagItem::new, new Item.Settings()
-            .maxCount(1));
 
 
     public static void initializeModItems() {
