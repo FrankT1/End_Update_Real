@@ -2,6 +2,7 @@ package com.frookus.endupdatereal.item;
 
 import com.frookus.endupdatereal.EndUpdateReal;
 import com.frookus.endupdatereal.item.custom.EnderDustItem;
+import com.frookus.endupdatereal.item.custom.EnderSwordItem;
 import com.frookus.endupdatereal.item.custom.MortarItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -42,6 +43,9 @@ public class ModItems {
     public static final Item OBSIDIAN_MORTAR = registerItem("obsidian_mortar", MortarItem::new, new Item.Settings()
             .maxCount(1)
             .maxDamage(65536));
+    public static final Item ENDER_SWORD = registerItem("ender_sword", EnderSwordItem::new, new Item.Settings()
+            .maxCount(1)
+            .useCooldown(0.5f));
 
 
     public static void initializeModItems() {
